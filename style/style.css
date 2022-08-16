@@ -1,0 +1,556 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background: #3da13a;
+}
+header .menuBtn {
+  position: absolute;
+  font-size: 1.6em;
+  right: 0.4em;
+  top: 2em;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.closeMenu {
+  position: absolute;
+  font-size: 4.5em;
+  top: 1em;
+  right: 0.3em;
+  color: #dad7cd;
+  cursor: pointer;
+  display: none;
+}
+
+.logoBox {
+  height: 2.6em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #dad7cd;
+}
+
+.navul {
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  background: #1a1a1a;
+}
+
+.navlist,
+.demo {
+  padding: 19px;
+  list-style: none;
+  color: #dad7cd;
+  transition: all 0.1s ease;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+.activeNav {
+  background: #344e41;
+}
+
+.navlist:hover,
+.demo:hover {
+  /* background: #344e41; */
+  color: #fff;
+}
+
+.border-bottom {
+  height: 2px;
+  width: 0px;
+  background: rgb(129, 184, 255);
+  align-self: center;
+  margin: auto;
+  transition: all 0.6s ease;
+}
+
+.navlist:hover .border-bottom-home {
+  width: 3em;
+}
+
+.navlist:hover .border-bottom-about {
+  width: 3.1em;
+}
+
+.navlist:hover .border-bottom-service {
+  width: 4em;
+}
+
+.navlist:hover .border-bottom-product {
+  width: 5em;
+}
+
+.navlist:hover .border-bottom-contact {
+  width: 6em;
+}
+
+.demo:hover .border-bottom-demo {
+  width: 3em;
+}
+
+.login {
+  position: absolute;
+  cursor: pointer;
+  right: 0.5em;
+  font-size: 1.6em;
+  color: #dad7cd;
+  top: 5em;
+}
+
+/* ..................home contant css................  */
+
+.home-content {
+  /* display: none; */
+}
+.homecontBody {
+  height: 100vh;
+  background-image: url(/images/home-bg1.jpg);
+  background-size: cover;
+}
+
+.home-text {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 3em;
+}
+
+.homeMainText {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.getdevloper {
+  text-decoration: none;
+}
+
+.getdevloper-button {
+  border: 2px solid black;
+  border-radius: 1em;
+  width: 130%;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  color: rgb(65, 56, 56);
+  background: #a3b18a;
+  transition: all 0.4s ease-in-out;
+}
+
+.getdevloper-button:hover {
+  background: white;
+  color: black;
+}
+.home-buttom-content {
+  width: 100%;
+  margin-top: 8em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-buttom-box {
+  height: 10%;
+  width: 20%;
+  margin: 1em;
+  background: #dad7cd;
+  text-align: center;
+}
+
+.homecont-icon {
+  font-size: 3.5em;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.5em;
+}
+.homecont-text {
+  margin: 1em;
+  font-size: 1.15em;
+  color: #18b0ab;
+}
+.homecont-text span {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: black;
+}
+
+/* .......................start about contant css......................  */
+
+.about-content{
+  display: none;
+}
+.menuCont-header {
+  text-transform: uppercase;
+  font-size: 1.9em;
+  text-align: center;
+  margin-top: 1em;
+  padding: 0.3em;
+  background: #A3B18A;
+}
+
+.aboutCont-largebox {
+  padding: 2em 1.5em;
+}
+
+.aboutCont-2nd-box {
+  display: flex;
+}
+
+.aboutCont-title {
+  font-size: 22px;
+  text-align: center;
+  color: #18b0ab;
+  text-decoration: underline;
+}
+
+.aboutCont-text {
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.aboutCont-smallbox {
+  padding: 20px 35px;
+}
+
+.aboutcont-1st-Smallbox {
+  width: 60%;
+}
+
+.aboutcont-2nd-Smallbox {
+  width: 40%;
+}
+
+.aboutCont-smallbox-title {
+  text-align: start;
+}
+
+.aboutCont-details-mainBox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.aboutCont-details-Box {
+  width: 20%;
+  margin: 20px 16px;
+  color: #18b0ab;
+}
+
+.aboutCont-icon {
+  font-size: 70px;
+  color: #fcb22c;
+}
+
+.aboutCont-count-item {
+  font-size: 16px;
+  text-align: center;
+  margin: 14px 0px;
+}
+.aboutCont-count-item-logo {
+  color: #4b4eb5;
+  font-size: 18px;
+}
+
+.aboutCont-downBorder {
+  background-color: black;
+  height: 2px;
+  width: 70%;
+  margin: 15px auto;
+}
+
+.aboutCont-count-item-name {
+  font-size: 25px;
+}
+
+/* ......................start service contant css ........................  */
+.service-content{
+  display: none;
+}
+
+.service-content-mainBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-content-box{
+  width: 20%;
+  height: 40%;
+  margin: 40px 70px;
+  text-align: center;
+
+}
+
+.service-content-box img {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #18b0ab;
+  border-radius: 100px;
+}
+
+.service-cont-partition{
+  height:380px ;
+  width: 1px;
+  background-color: black;
+  margin-top: 60px;
+}
+.serviceCont-text{
+  font-size: 20px;
+  padding-top: 25px;
+  color: #18b0ab;
+}
+.serviceCont-subText {
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 10px;
+  color: black;
+}
+
+/* ........end service content css........ */
+
+
+/* ..........start product css.......... */
+
+.product-content {
+  margin: 2em 0em;
+  display: none;
+}
+
+.product-content-mainBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0em;
+}
+
+.product-content-box {
+  width: 25%;
+  height: 38em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px;
+  background: #344E41;
+  margin: 0px 20px;
+}
+
+.productCont-boxTitle {
+  height: 120px;
+  padding: 50px 0px;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+}
+
+.productCont-ulBox{
+  overflow: auto;
+  background: white;
+  line-height: 2;
+  height: 360px;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 15px 0px ;
+}
+.productCont-detailsBox {
+  width: 100%;
+}
+
+
+
+.productCont-ulBox::-webkit-scrollbar{
+  width: 10px;
+}
+.productCont-ulBox::-webkit-scrollbar-track{
+  background: #18b0ab;
+  width: 8px;
+}
+.productCont-ulBox::-webkit-scrollbar-thumb{
+  background:repeating-linear-gradient(131deg, #090a0a, #fd0a0a 15px) ;
+  border-radius: 30px;
+}
+.productCont-ulBox li {
+  font-size: 14px;
+  margin: 0px 40px;
+  list-style-type: disclosure-closed;
+  font-style: italic;
+  transition: all 0.5s ease;
+}
+
+.productCont-ulBox li:hover{
+ padding-left: 20px;
+}
+
+.productCont-price{
+  text-align: center;
+  margin: 15px;
+  font-size: 17px;
+}
+
+
+.product-orderButton {
+  text-align: center;
+  height: 44px;
+  width: 150px;
+  font-size: 18px;
+  border-radius: 25px;
+  border: 0px;
+  margin-left: 2em;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ef0d0d, #18b0ab);
+  transition: all 0.4s ease-in-out;
+}
+
+.product-orderButton:hover{
+  color: white;
+  box-shadow: 8px 8px 10px 1px black;
+  background: linear-gradient(270deg, #ef0d0d, #18b0ab);
+}
+.product-orderButton:active{
+  box-shadow: none;
+  color: white;
+}
+
+/* ............end product css........... */
+
+
+/* ............start  contact contant css........... */
+
+.contact-contant{
+  display: none;
+}
+
+/* ............end  contact contant css........... */
+
+
+/* ...............demo contant css.............  */
+
+.demoPage-contant{
+  display: none;
+  background: url(/images/demo_bg.jpg);
+  height: 80vh;
+  background-size: cover;
+}
+
+.sitemainCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 0em;
+}
+
+.sitebox {
+  padding: 2em;
+  text-align: center;
+  align-items: center;
+  width: 30%;
+  margin: auto;
+  /* height: 36vh; */
+  font-size: 0.7em;
+  text-transform: capitalize;
+  background: grey;
+  box-shadow: 2px 3px 13px 2px black;
+  border-radius: 4px;
+}
+
+.sitebox img{
+  width: 90%;
+  border-radius: 4px;
+}
+
+.sitebox a{
+  text-decoration: none;
+}
+
+.sitebox h1{
+  padding: .5em;
+}
+
+
+
+/* .................footer contant css................... */
+
+.footer {
+  background: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-box {
+  width: 30%;
+  margin: 2em;
+}
+
+.footerBox-title {
+  font-size: 1.5em;
+}
+
+.footer-box ul li {
+  margin: 10px 0px;
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.footer-box ul li a:hover {
+  color: #fff;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: #999;
+  transition: color 0.5s ease-in-out;
+}
+
+.footer-box ul li [last-child] {
+  color: red;
+}
+
+.shortContect-icon {
+  margin-right: 20px;
+  font-size: 1em;
+}
+
+p.quote {
+  margin: 27px 0px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.5;
+  color: #999;
+}
+
+.paymentAcept img {
+  width: 50px;
+  height: 25px;
+  margin: 5px 1px;
+  border-radius: 2px;
+}
+.paymentAcept p {
+  font-size: 10px;
+}
+
+.copyright {
+  background: rgb(100, 98, 98);
+}
+
+.copyright p {
+  padding: 16px 60px;
+}
+
+/* ........end footer css........ */

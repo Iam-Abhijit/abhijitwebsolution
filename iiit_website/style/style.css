@@ -1,0 +1,800 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(17, 217, 243);
+}
+
+.bodyCont {
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+header {
+  margin-top: 1.2em;
+  text-align: center;
+  align-items: center;
+  background: rgb(248, 248, 248);
+  line-height: 35px;
+}
+
+.logo {
+  margin: 1em;
+  /* border: 1px solid yellow;
+    border-radius: 50em; */
+}
+
+header h1 {
+  font-weight: 900;
+  word-spacing: 4px;
+}
+
+header p {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+header p.subLogo {
+  word-spacing: 0.3em;
+}
+
+header .certif {
+  font-size: 1.37em;
+  font-weight: 200;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+nav ul li {
+  list-style: none;
+  background-color: #2b65b5;
+  padding: 1.3em;
+  color: white;
+  border-left: 1px solid black;
+  font-size: 0.75em;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background, color 0.7s ease;
+}
+
+nav ul li:first-child a {
+  border-left: none;
+}
+
+nav ul li:hover {
+  background: #000000;
+  /* color: black; */
+}
+
+.activeNav {
+  background: #242323;
+}
+
+/* .........................home cont...style .....................  */
+.homeCont {
+}
+
+/* ......home image slider........ */
+
+.sliderBody {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+  margin: 0.5em 0em;
+  background-color: rgba(240, 248, 255, 0.438);
+  padding: 2.9em 9em;
+}
+
+.sliderCont img {
+  height: 30em;
+  width: 60em;
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* .....admission cont css............ */
+
+.admissionCont {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  background: rgba(36, 117, 189, 0.432);
+}
+
+.adm-RightCont,
+.adm-RightCont a,
+.adm-leftCont,
+.adm-leftCont a,
+.adm-midCont a,
+.adm-midCont {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+}
+
+/* .....admission left cont...... */
+
+.adm-leftCont {
+  width: 34%;
+  align-items: center;
+  justify-content: start;
+  margin-top: 3em;
+}
+
+.S-Btn {
+  height: 4em;
+  width: 15em;
+  font-size: 1.1em;
+  color: white;
+  text-transform: uppercase;
+  margin: 1em 0em;
+  border-radius: 1em;
+  text-align: center;
+  background: #326ab8;
+  transition: background 0.3s ease;
+}
+
+.S-Btn:hover {
+  background: #0abeff;
+}
+
+/* ..........admission midCont......... */
+
+.adm-midCont {
+  width: 40%;
+  align-items: center;
+}
+
+.adm-Text {
+  background: #326ab8;
+  width: 11em;
+  font-size: 2em;
+  margin: 1em;
+  border-radius: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+.adm-midCont a img {
+  height: 10em;
+}
+
+.projActi {
+  padding: 2em;
+  text-align: center;
+  background: #326ab8;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
+
+/* ...........admission right cont...css......... */
+
+.adm-leftCont {
+  width: 30%;
+}
+
+.H-sliderCont {
+  height: 16em;
+  width: 16em;
+  z-index: 100;
+  /* overflow: hidden; */
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.sec-H-slide {
+  animation: fade 1.5s;
+}
+
+.viewCont {
+  position: fixed;
+  background: #000000d9;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 0em;
+}
+
+.view-slide {
+  position: absolute;
+  width: 30em;
+  height: 32em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#closeDocView {
+  display: none;
+  color: red;
+  position: absolute;
+  /* background: red; */
+  height: 1.2em;
+  width: 1.2em;
+  text-align: center;
+  top: 1em;
+  right: 2em;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#nextslide {
+  display: none;
+  position: fixed;
+  right: 1em;
+  top: 45%;
+  color: white;
+  font-size: 9em;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* ..........sopnser container css............  */
+
+.sponserCont {
+  background: rgb(255, 255, 255);
+  margin-top: 1em;
+  height: 35vh;
+}
+
+.sponserCont .title {
+  padding: 1em 2em;
+  text-transform: capitalize;
+}
+
+.sponserImgCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponserImgCont img {
+  height: 5em;
+  width: 5em;
+  margin: 0em 1em;
+}
+
+/* .......... about container style.........  */
+
+.aboutCont {
+  background-color: rgba(240, 248, 255, 0.438);
+  margin: 1em 0em;
+  display: none;
+}
+
+.aboutCont h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  padding: 1.3em;
+  text-transform: uppercase;
+}
+
+.aboutCont hr {
+  /* color: black; */
+  width: 95%;
+  /* border-color: black; */
+  /* background: black; */
+  margin: auto;
+}
+
+.aboutmainCont {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutleftCont {
+  width: 30%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+  margin: 1em 0em;
+}
+
+.aboutleftCont img {
+  background: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1.5em;
+  box-shadow: 0px 0px 9px 1px #565454;
+}
+
+.aboutleftCont .msg {
+  margin: auto;
+  margin-top: 1.5em;
+  padding: 1em;
+  font-size: 1em;
+  border: 1px solid black;
+  width: 70%;
+  cursor: pointer;
+  text-transform: capitalize;
+  background: white;
+  transition: background, color 0.5s ease;
+}
+
+.activeBtnMsg {
+  background: #2b65b5 !important;
+  color: white;
+}
+.aboutleftCont .activeMsg {
+  background: #2b65b5;
+}
+
+.aboutleftCont .msg:hover {
+  background-color: #0abeff;
+}
+
+.aboutrightCont {
+  width: 70%;
+  margin: 1em 0em;
+  padding: 0.5em 3.5em;
+  padding-bottom: 3em;
+  line-height: 2;
+  border-left: 1px solid black;
+}
+
+/* .........styling for about contant within about main div (first div/second div/third div )........  */
+
+.about-iiitDiv {
+  /* display: none; */
+}
+
+.about-directorMsg {
+  display: none;
+}
+
+.about-goal {
+  display: none;
+}
+
+.about-rules {
+  display: none;
+}
+
+/* .........styling for about contant within about main div (first div)........  */
+
+.aboutText h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.aboutrightCont p {
+  font-size: 1.1em;
+}
+
+.aboutrightCont li {
+  list-style: decimal;
+  font-size: 1.05em;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+/* .........styling for director message contant within about main div (second div )........  */
+
+.about-directorMsg p {
+  font-size: 1.05em;
+}
+
+.about-directorMsg span {
+  float: right;
+  margin-right: 6em;
+  font-size: 1.09em;
+  font-weight: 600;
+}
+
+/* .........styling for goal and vission contant within about main div (third div )........  */
+
+.about-goal li {
+  list-style: disc;
+  font-weight: 300;
+}
+
+/* .........styling for rules and ragulation contant within about main div (forth div )........  */
+
+.about-rules ul p {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+.about-rules ul table,
+.about-rules ul table tr,
+.about-rules ul table th,
+.about-rules ul table td {
+  font-size: 1.05em;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-transform: capitalize;
+}
+
+.about-rules ul table tr td:first-child {
+  font-size: 1em;
+  padding-left: 1em;
+}
+
+.about-rules ul table tr td:last-child {
+  width: 6em;
+  text-align: center;
+}
+
+.about-rules ul table tr td span {
+  color: red;
+  padding: 0.4em;
+}
+
+/* .........end about contant css .......  */
+
+/* ....................start contact contant css...................... */
+
+.contactCont {
+  background-color: rgba(240, 248, 255, 0.438);
+  margin: 1em 0em;
+  display: none;
+  line-height: 2;
+}
+
+.contactCont h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  /* text-align: center; */
+}
+
+.contactCont p {
+  font-size: 1.1em;
+  text-align: start;
+}
+
+.contactMainTopDiv {
+  display: flex;
+  /* justify-content:center ; */
+  padding: 2em;
+}
+
+.contactleftDiv,
+.contactrightDiv {
+  width: 50%;
+}
+
+.contactrightDiv {
+  align-items: center;
+  margin: auto;
+}
+
+.contactrightDiv iframe {
+  box-shadow: 0px 0px 22px 0px;
+}
+
+/* ............................end contact contant css.......................... */
+
+/* ................................start course contant css.........................  */
+
+.courseCont {
+  background-color: rgba(240, 248, 255, 0.438);
+  margin: 1em 0em;
+  display: none;
+  padding: 1em;
+  line-height: 2;
+}
+
+.courseCont h1 {
+  text-align: center;
+  /* border-bottom: 1px solid black; */
+  text-decoration: underline;
+  height: 3em;
+  text-transform: uppercase;
+}
+
+.courseMainDiv {
+  display: flex;
+}
+
+.courseleftDiv {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  margin-top: 5em;
+  flex-direction: column;
+}
+
+.courseleftDiv .coursebtn {
+  height: 3.5em;
+  width: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  border-radius: 0.2em;
+  border: 1px solid black;
+  cursor: pointer;
+  background: #f7fbff;
+  transition: background 0.5s ease;
+}
+
+.courseleftDiv .coursebtn:hover {
+  background: #0abeff;
+}
+
+.activeBtnCourse {
+  background: #2b65b5 !important;
+  color: white;
+}
+
+.courseRightDiv {
+  width: 70%;
+  margin: 1em;
+  padding: 2em;
+  border-left: 1px solid black;
+}
+
+.courseTable,
+.courseTable td,
+.courseTable th,
+.courseTable tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.courseTable tr span {
+  text-transform: uppercase;
+}
+
+/* .itCourseDiv, */
+.lanCourseDiv,
+.vocCourseDiv,
+.techCourseDiv {
+  display: none;
+}
+.courseTable th {
+  font-weight: 900;
+}
+.courseTable td:nth-child(2) {
+  text-align: start;
+  width: 26em;
+}
+
+/* ........................end course contant css..............................  */
+
+/* ......................start photogallery contamt css............................  */
+.photoCont {
+  display: none;
+  background: #06a9e4;
+  margin-top: 1em;
+}
+
+.photomainCont {
+}
+.bigimgCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  animation: fade 0.5s;
+}
+.bigimgCont img {
+  border-radius: 20px;
+}
+
+.nextPhoto,
+.prePhoto {
+  font-size: 10em;
+  background: #ffffff05;
+  border-width: 0;
+  margin: 0em 0.3em;
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.smallimgCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  animation: fade 0.5s;
+}
+.smallimgCont img {
+  height: 5em;
+  width: 10%;
+  margin: 30px 5px;
+  cursor: pointer;
+}
+.activePhoto {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+/* .................end photogallery contamt css.................  */
+
+/* .................. start news and media contant css.................  */
+
+/* ..................end news and media contant css.................  */
+
+/* ..................start publication contant css..................... */
+
+.publiCont {
+  background-color: rgba(240, 248, 255, 0.438);
+  margin: 1em 0em;
+  display: none;
+  padding: 1em;
+  line-height: 2;
+}
+
+.publiCont img {
+  width: 60%;
+  padding-top: 2em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.publicationDownload {
+  display: flex;
+  justify-content: center;
+}
+.publicationDownload a {
+}
+
+.publicationDownload a button {
+  width: 8em;
+  height: 3em;
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin: 2em;
+  cursor: pointer;
+  color: blue;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* ..................send publication contant css..................... */
+
+/* .................start placementcell contant css............  */
+
+.placementCont {
+  background-color: rgba(240, 248, 255, 0.438);
+  margin: 1em 0em;
+  display: none;
+  padding: 1em;
+  line-height: 1.2;
+}
+
+.placementMainCont p {
+  font-size: 1.5em;
+  padding: 2em 3em;
+  /* font-weight: 600; */
+}
+.placementMainCont a {
+  text-decoration: none;
+  cursor: default;
+}
+.placementMainCont button {
+  padding: 1em;
+  font-size: 1.3em;
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  background: #06a9e4;
+  text-transform: capitalize;
+  transition: background, color 0.5s ease;
+}
+
+.placementMainCont button:hover {
+  background: #013346;
+  color: white;
+}
+
+.placementLogo {
+  margin: 3em;
+}
+.placementMainCont .placementLogo img {
+  width: 60em;
+  margin: auto;
+  display: flex;
+}
+
+/* .................end placementcell contant css............  */
+
+/* ...............start download contant css..................  */
+
+.downloadCont {
+  background-color: rgba(240, 248, 255, 0.438);
+  margin: 1em 0em;
+  display: none;
+  padding: 1em;
+  line-height: 2;
+}
+.downloadmainCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.downloadmainCont svg {
+  height: 8em;
+  width: 4em;
+  position: absolute;
+  color: white;
+}
+
+.downloadCont a button {
+  width: 15em;
+  height: 3em;
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin: 2em;
+  margin-left: 5em;
+  cursor: pointer;
+  color: blue;
+  text-align: center;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+.downloadCont a button:hover{
+  background: rgb(184, 182, 182);
+}
+
+
+
+/* ...............start download contant css..................  */
+
+/* .................satrt notice contant css...................  */
+
+/* .................end notice contant css...................  */
+
+/* ........copyright css style........  */
+
+.copyright {
+  height: 10vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.514);
+  color: white;
+  text-transform: capitalize;
+  font-weight: 700;
+}

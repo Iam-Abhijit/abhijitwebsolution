@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/drum_website/images/bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.drumStartText{
+    /* display: none; */
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.drumStartText h1 {
+    font-size: 3em;
+    text-transform: capitalize;
+    color: darkorange;
+}
+
+.drumStartText button {
+    padding: 0.5em;
+    font-size: 19px;
+    border-radius: 7px;
+    border: 1px solid blue;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    animation: colorchange 1s ease-in-out infinite;
+}
+
+@keyframes colorchange {
+    0%{
+        background: linear-gradient(90deg, rgb(212, 182, 182), #873f3f);
+    }
+    5%{
+        background: linear-gradient(115deg, rgb(212, 182, 182), #873f3f);
+    }
+    10%{
+        background: linear-gradient(120deg, rgb(212, 182, 182), #873f3f);
+    }
+    15%{
+        background: linear-gradient(135deg, rgb(212, 182, 182), #873f3f);
+    }
+    20%{
+        background: linear-gradient(150deg, rgb(212, 182, 182), #873f3f);
+    }
+    25%{
+        background: linear-gradient(165deg, rgb(212, 182, 182), #873f3f);
+    }
+    30%{
+        background: linear-gradient(180deg, rgb(212, 182, 182), #873f3f);
+    }
+    35%{
+        background: linear-gradient(195deg, rgb(212, 182, 182), #873f3f);
+    }
+    40%{
+        background: linear-gradient(210deg, rgb(212, 182, 182), #873f3f);
+    }
+    45%{
+        background: linear-gradient(225deg, rgb(212, 182, 182), #873f3f);
+    }
+    50%{
+        background: linear-gradient(240deg, rgb(212, 182, 182), #873f3f);
+    }
+    55%{
+        background: linear-gradient(255deg, rgb(212, 182, 182), #873f3f);
+    }
+    60%{
+        background: linear-gradient(270deg, rgb(212, 182, 182), #873f3f);
+    }
+    65%{
+        background: linear-gradient(285deg, rgb(212, 182, 182), #873f3f);
+    }
+    70%{
+        background: linear-gradient(300deg, rgb(212, 182, 182), #873f3f);
+    }
+    75%{
+        background: linear-gradient(315deg, rgb(212, 182, 182), #873f3f);
+    }
+    80%{
+        background: linear-gradient(335deg, rgb(212, 182, 182), #873f3f);
+    }
+    85%{
+        background: linear-gradient(360deg, rgb(212, 182, 182), #873f3f);
+    }
+    90%{
+        background: linear-gradient(20deg, rgb(212, 182, 182), #873f3f);
+    }
+    95%{
+        background: linear-gradient(40deg, rgb(212, 182, 182), #873f3f);
+
+    }
+    100%{
+        background: linear-gradient(70deg, rgb(212, 182, 182), #873f3f);
+    }
+}
+
+.drumkeyCont{
+    /* display: none; */
+    display:flex;
+    /* position:absolute; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.drumkey{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: rgb(14, 14, 14);
+    background: rgb(116, 238, 16);
+    padding: 3% 4%;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all .05s ease;
+}
+.playing{
+    transform: scale(1.1);
+    border: 1px solid rgb(68, 0, 255);
+    color: antiquewhite;
+}
+
+.backbutton {
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.backbutton1 {
+    position: absolute;
+    top: 4em;
+    left: 3em;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.backbutton a{
+    color: white;
+}
+
+
+.mobiledrumkeyCont {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 5px;
+    grid-column-gap: 6px;
+    padding-top: 17vh!important;
+    padding: 7vh;
+}
+
+
+
+.mDrumkey {
+    height: 20vh;
+}
+.mkey1{
+    background: red;
+
+}
+.mkey2{
+    background: green;
+}
+.mkey3{
+    background: violet;
+}
+.mkey4{
+    background: yellow;
+}
+.mkey5{ 
+    background: beige;
+}
+.mkey6{
+    background: blue;
+}
+
+
+
+@media screen and (max-width: 500px){
+    .drumStartText{
+        font-size: 8px;
+    }
+    .drumStartText button{
+        font-size: 10px;
+        border-radius: 4px;
+    }
+
+    .drumkey {
+        padding: 0.3em 0.5em;
+        font-size: 1.1em;
+        border-radius: 3px;
+        background: darkgrey;
+    }
+    .backbutton{
+        font-size: .7em;
+        top: 3em;
+    }
+
+    
+}

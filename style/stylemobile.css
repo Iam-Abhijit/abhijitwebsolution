@@ -1,0 +1,217 @@
+/* ..............responsive view................ */
+
+@media screen and (max-width: 800px) {
+  /* .................nav css responsive...............  */
+  .logoBox {
+    height: 7em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+  }
+
+  header .menuBtn {
+    display: block;
+  }
+  .closeMenu {
+    display: block;
+  }
+
+  .navul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    transition: left 0.5s ease;
+  }
+
+  .navlist {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+
+  .login {
+    position: absolute;
+    right: 48%;
+    font-size: 2em;
+    color: #dad7cd;
+    top: 2.8em;
+  }
+
+  /* .................home contant css responsive..............  */
+
+  .homecontBody {
+    height: 100%;
+  }
+
+  .home-text {
+    font-size: 1.1em;
+    padding-top: 8em;
+  }
+
+  .getdevloper-button {
+    font-size: 1em;
+  }
+
+  .home-buttom-content {
+    flex-direction: column;
+    margin-top: 4em;
+  }
+  .home-buttom-box {
+    height: 10%;
+    width: 80%;
+  }
+
+  /* ........................about contant responsive ..................  */
+
+  .about-content {
+    padding-bottom: 2em;
+  }
+  .menuCont-header {
+    font-size: 1.5em;
+  }
+
+  .aboutCont-title {
+    font-size: 1em;
+    text-align: start;
+  }
+
+  .aboutCont-text,
+  .aboutCont-2nd-box li {
+    font-size: 0.86em;
+    line-height: 1.5em;
+  }
+
+  .aboutCont-2nd-box {
+    flex-direction: column;
+    padding-top: 0em;
+  }
+  .aboutCont-smallbox {
+    padding: 1em 0em;
+  }
+
+  .aboutcont-1st-Smallbox {
+    width: 100%;
+  }
+
+  .aboutcont-2nd-Smallbox {
+    width: 100%;
+  }
+
+  .aboutCont-details-mainBox {
+    flex-direction: column;
+    margin: 2em 0em;
+  }
+
+  .aboutCont-details-Box {
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  .aboutCont-icon {
+    font-size: 3em;
+    color: #344e41;
+  }
+  .aboutCont-downBorder {
+    width: 11em;
+  }
+  .aboutCont-count-item {
+    font-size: 1em;
+  }
+  .aboutCont-count-item-name {
+    font-size: 1.3em;
+  }
+
+  /* .....................service contant responsive............ */
+
+  .service-content-mainBox {
+    flex-direction: column;
+  }
+
+  .service-content-box {
+    width: 80%;
+  }
+
+  .service-cont-partition {
+    display: none;
+  }
+
+  /* .................product contant responsive............. */
+
+  .product-content-mainBox {
+    flex-direction: column;
+    margin-top: 0em;
+  }
+
+  .product-content-box {
+    width: 80%;
+    height: 35em;
+    margin: 2em;
+  }
+  .productCont-boxTitle {
+    font-size: 1em;
+    height: 0em;
+    padding-top: 2em;
+  }
+  .productCont-detailsBox li {
+    font-size: 0.76em;
+  }
+/* .....................demo contant responsive ...............  */
+
+.demoPage-contant{
+  height: auto;
+}
+
+.sitemainCont{
+  flex-direction: column;
+  padding: 1em;
+
+}
+
+.sitebox {
+  margin: 3em;
+  width: 70%;
+  font-size: .6em;
+}
+
+.sitebox img {
+  width: 90%;
+  border-radius: 4px;
+}
+
+
+
+  /* .....................footer contant css responsive.........  */
+
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer-box {
+    width: 90%;
+    text-align: start;
+    margin: 1em 2em;
+  }
+
+  .footerBox-title {
+    font-size: 1.1em;
+  }
+
+  .footer-box h1 {
+    font-size: 1.3em;
+  }
+
+  .paymentAcept img {
+    width: 2em;
+    height: 1.4em;
+  }
+
+  .copyright p {
+    padding: 1em 0.9em;
+    font-size: 0.8em;
+  }
+}

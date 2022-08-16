@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/drum_website/style/style.css">
+    <link rel="shortcut icon" href="/drum_website/images/drum_title_logo.jpg" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="backbutton"><a href="/">home page</a></div>
+    <div class="backbutton1"><a href="mobiledrum.html">movile drum app</a></div>
+    
+    <div class="drumkeyCont">
+
+        <div data-key="65" class="drumkey">
+            <kbd>a</kbd>
+        </div>
+
+        <div data-key="83" class="drumkey">
+            <kbd>s</kbd>
+        </div>
+
+        <div data-key="68" class="drumkey">
+            <kbd>d</kbd>
+        </div>
+
+        <div data-key="70" class="drumkey">
+            <kbd>f</kbd>
+        </div>
+
+        <div data-key="71" class="drumkey">
+            <kbd>g</kbd>
+        </div>
+
+        <div data-key="72" class="drumkey">
+            <kbd>h</kbd>
+        </div>
+
+        <div data-key="74" class="drumkey">
+            <kbd>j</kbd>
+        </div>
+
+        <div data-key="75" class="drumkey">
+            <kbd>k</kbd>
+        </div>
+
+        <div data-key="76" class="drumkey">
+            <kbd>l</kbd>
+        </div>
+
+    </div>
+
+   
+
+
+    <audio data-key="65" src="/drum_website/audio/boom_1st.wav"></audio>
+    <audio data-key="83" class="mkey1" src="/drum_website/audio/clap_2nd.wav"></audio>
+    <audio data-key="68" class="mkey2" src="/drum_website/audio/hihat_3rd.wav"></audio>
+    <audio data-key="70" class="mkey3" src="/drum_website/audio/kick_4th.wav"></audio>
+    <audio data-key="71" class="mkey4" src="/drum_website/audio/openhat_5th.wav"></audio>
+    <audio data-key="72" class="mkey5" src="/drum_website/audio/ride_6th.wav"></audio>
+    <audio data-key="74" class="mkey6" src="/drum_website/audio/snare_7th.wav"></audio>
+    <audio data-key="75" src="/drum_website/audio/tink_8th.wav"></audio>
+    <audio data-key="76" src="/drum_website/audio/tom_9th.wav"></audio>
+
+
+
+
+    <script>
+
+        var playbuttonCont = document.querySelector(".drumStartText");
+        var letsPlay = document.querySelector(".drumStartText button");
+        var keyCont = document.querySelector(".drumkeyCont");
+
+        // letsPlay.addEventListener("click",function(){
+        //     console.log("clicked")
+        //     playbuttonCont.style.display="none";
+        //     keyCont.style.display="block"
+
+        // })
+
+      
+        // var mdrumaudios=document.querySelectorAll("audio");
+        // console.log(mdrumaudios)
+        
+
+
+
+
+
+        window.addEventListener("keydown", function (e) {
+            var key = document.querySelector(`.drumkey[data-key="${e.keyCode}"]`);
+            var audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+            if (!audio) {
+                return;
+            }
+            audio.currentTime = 0;
+            audio.play();
+            key.classList.add("playing");
+        })
+
+
+
+        var keys = document.querySelectorAll(".drumkey");
+
+
+        keys.forEach(el => {
+            el.addEventListener("transitionend", function (e) {
+
+                if (e.propertyName !== "transform") {
+                    return;
+                }
+                e.target.classList.remove("playing");
+            })
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

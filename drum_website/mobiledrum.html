@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/drum_website/style/style.css">
+    <title>mobile drum player</title>
+</head>
+
+<body>
+
+    <div class="backbutton"><a href="/">home page</a></div>
+
+
+    <div class="mobiledrumkeyCont">
+        <div class="mDrumkey mkey1"></div>
+        <div class="mDrumkey mkey2"></div>
+        <div class="mDrumkey mkey3"></div>
+        <div class="mDrumkey mkey4"></div>
+        <div class="mDrumkey mkey5"></div>
+        <div class="mDrumkey mkey6"></div>
+    </div>
+
+
+    <audio class="mkey1" src="/drum_website/audio/clap_2nd.wav"></audio>
+    <audio class="mkey2" src="/drum_website/audio/hihat_3rd.wav"></audio>
+    <audio class="mkey3" src="/drum_website/audio/kick_4th.wav"></audio>
+    <audio class="mkey4" src="/drum_website/audio/openhat_5th.wav"></audio>
+    <audio class="mkey5" src="/drum_website/audio/ride_6th.wav"></audio>
+    <audio class="mkey6" src="/drum_website/audio/snare_7th.wav"></audio>
+
+    <script>
+
+        var drumkeys = document.querySelectorAll(".mDrumkey");
+
+        drumkeys.forEach(el => {
+
+            el.addEventListener("click", function (e) {
+                var mdrumaudios = document.querySelector(`audio[class="${e.target.classList[1]}"]`);
+                mdrumaudios.play();
+                mdrumaudios.currentTime = 0;
+                // el.classList.add("playing");
+            })
+
+            // el.addEventListener("transitionend", function (e) {
+
+            //     if (e.propertyName !== "transform") {
+            //         return;
+            //     }
+            //     e.target.classList.remove("playing");
+            // })
+        })
+
+    </script>
+
+</body>
+
+</html>
